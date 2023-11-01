@@ -1,0 +1,129 @@
+<!-- user.component.html -->
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()" class="user-form">
+    <div class="form-group">
+        <label for="salutation">Salutation:</label>
+        <input type="text" id="salutation" formControlName="salutation">
+    </div>
+
+    <div class="form-group">
+        <label for="initials">Initials:</label>
+        <input type="text" id="initials" formControlName="initials">
+    </div>
+
+    <div class="form-group">
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" formControlName="firstname">
+    </div>
+
+    <div class="form-group">
+        <label for="firstname_ascii">First Name (ASCII):</label>
+        <input type="text" id="firstname_ascii" formControlName="firstname_ascii">
+    </div>
+
+    <div class="form-group">
+        <label for="gender">Gender:</label>
+        <input type="text" id="gender" formControlName="gender">
+    </div>
+
+    <div class="form-group">
+        <label for="firstname_country_rank">First Name Country Rank:</label>
+        <input type="text" id="firstname_country_rank" formControlName="firstname_country_rank">
+    </div>
+
+    <div class="form-group">
+        <label for="firstname_country_frequency">First Name Country Frequency:</label>
+        <input type="text" id="firstname_country_frequency" formControlName="firstname_country_frequency">
+    </div>
+
+    <div class="form-group">
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" formControlName="lastname">
+    </div>
+
+    <div class="form-group">
+        <label for="lastname_ascii">Last Name (ASCII):</label>
+        <input type="text" id="lastname_ascii" formControlName="lastname_ascii">
+    </div>
+
+    <div class="form-group">
+        <label for="lastname_country_rank">Last Name Country Rank:</label>
+        <input type="text" id="lastname_country_rank" formControlName="lastname_country_rank">
+    </div>
+
+    <div class="form-group">
+        <label for="lastname_country_frequency">Last Name Country Frequency:</label>
+        <input type="text" id="lastname_country_frequency" formControlName="lastname_country_frequency">
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" id="email" formControlName="email">
+    </div>
+
+    <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="text" id="password" formControlName="password">
+    </div>
+
+    <div class="form-group">
+        <label for="country_code">Country Code:</label>
+        <input type="text" id="country_code" formControlName="country_code">
+    </div>
+
+    <div class="form-group">
+        <label for="country_code_alpha">Country Code Alpha:</label>
+        <input type="text" id="country_code_alpha" formControlName="country_code_alpha">
+    </div>
+
+    <div class="form-group">
+        <label for="country_name">Country Name:</label>
+        <input type="text" id="country_name" formControlName="country_name">
+    </div>
+
+    <div class="form-group">
+        <label for="primary_language_code">Primary Language Code:</label>
+        <input type="text" id="primary_language_code" formControlName="primary_language_code">
+    </div>
+
+    <div class="form-group">
+        <label for="primary_language">Primary Language:</label>
+        <input type="text" id="primary_language" formControlName="primary_language">
+    </div>
+
+    <div class="form-group">
+        <label for="balance">Balance:</label>
+        <input type="number" id="balance" formControlName="balance">
+    </div>
+
+    <div class="form-group">
+        <label for="phone_Number">Phone Number:</label>
+        <input type="text" id="phone_Number" formControlName="phone_Number">
+    </div>
+
+    <div class="form-group">
+        <label for="currency">Currency:</label>
+        <input type="text" id="currency" formControlName="currency">
+    </div>
+
+    <div class="form-group">
+        <label for="partitionKey">Partition Key:</label>
+        <input type="text" id="partitionKey" formControlName="partitionKey">
+    </div>
+
+    <div class="form-group">
+        <label for="rowKey">Row Key:</label>
+        <input type="text" id="rowKey" formControlName="rowKey">
+    </div>
+
+    <div class="form-group">
+        <label for="timestamp">Timestamp:</label>
+        <input type="text" id="timestamp" formControlName="timestamp">
+    </div>
+
+    <div class="form-group">
+        <label for="eTag">ETag:</label>
+        <input type="text" id="eTag" formControlName="eTag">
+    </div>
+
+    <button type="submit" class="submit-button">Save</button>
+</form>

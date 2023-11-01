@@ -1,0 +1,36 @@
+<h1>customer-list works!</h1>
+<div>
+    <!-- record-list.component.html -->
+ <!-- employee.component.html -->
+<div>
+    <h2>Employee List</h2>
+    <button (click)="createCustomer()" >Add Employee</button>
+    <table>
+      <thead>
+        <tr>
+            <th>ID</th>
+            <th>Salutation</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr  *ngFor="let customer of listCustomer;let i = index" >
+            <td>{{ customer.id }}</td>
+            <td>{{ customer.salutation }}</td>
+            <td>{{ customer.firstname }} {{ customer.initials }}</td>
+            <td>{{ customer.lastname }}</td>
+            <td>{{ customer.email }}</td>
+            <td>{{ customer.phone_Number }}</td>
+            <td>
+              <button (click)="showDetails(customer)">View</button>
+              <button (click)="openConfirmationDialog(customer)">Delete</button>
+            </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
