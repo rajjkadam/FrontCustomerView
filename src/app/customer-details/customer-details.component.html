@@ -1,30 +1,42 @@
-<div class="customer-details">
+
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Add Bootstrap CSS link via CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="customer-details">
     <h2>Customer Details</h2>
-    <table>
-     
+    <table class="table table-bordered">
       <tr>
-        <th>Salutation:</th>
+        <th class="table-dark">Salutation:</th>
         <td>{{ Cusomerddata.salutation }}</td>
       </tr>
       <tr>
-        <th>Firstname
-            :</th>
-        <td>{{ Cusomerddata.firstname
-        }}</td>
+        <th class="table-dark">First Name:</th>
+        <td>{{ Cusomerddata.firstname }}</td>
       </tr>
       <tr>
-        <th>lastname:</th>
+        <th class="table-dark">Last Name:</th>
         <td>{{ Cusomerddata.lastname }}</td>
       </tr>
       <tr>
-        <th>email:</th>
+        <th class="table-dark">Email:</th>
         <td>{{ Cusomerddata.email }}</td>
       </tr>
       <tr>
-        <th>balance:</th>
+        <th class="table-dark">Balance:</th>
         <td>{{ Cusomerddata.balance }}</td>
       </tr>
-      <!-- Add more rows for other properties -->
+      <!-- Add more rows for other properties with appropriate Bootstrap classes -->
     </table>
   </div>
-  
+
+  <!-- Add Bootstrap JS and Popper.js via CDN (optional) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+

@@ -24,4 +24,9 @@ export class GetCustomerDataService {
     const url = `${this.apiUrl}/${id}`;
     return this.http.delete(url);
   }
+  saveRecord(customerData: any): Observable<any> {
+    const url = `${this.apiUrl}`; // Remove the trailing `/` in the URL
+    return this.http.post(url, customerData); // Provide the URL and customerData as arguments
+ }
+
 }

@@ -3,6 +3,7 @@ import { GetCustomerDataService } from '../services/get-customer-data.service';
 import { CustomerDetailsComponent } from '../customer-details/customer-details.component';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-customer-list',
@@ -11,9 +12,11 @@ import { Router } from '@angular/router';
 })
 export class CustomerListComponent implements OnInit  {
   listCustomer:Array<any>=[];
-constructor(private customerService:GetCustomerDataService,
+constructor(
+  private customerService:GetCustomerDataService,
   private router: Router,
-  public dialog: MatDialog){
+  public dialog: MatDialog,
+  public messageService:ToastrService){
   
 }
 ngOnInit() {
@@ -29,7 +32,8 @@ deleteRecord(record: any): void {
   // if (index !== -1) {
   //   this.res.splice(index, 1);
   this.customerService.deleteRecord(record.id).subscribe(res=>{
-    
+    console.log('deleted successfully');
+    this.messageService.success('deleted successfully');
   })
   }
   createCustomer(){
