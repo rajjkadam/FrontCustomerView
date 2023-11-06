@@ -21,7 +21,7 @@ export class UserComponent implements OnInit {
       initials: [''],
       firstname: [''],
       firstname_ascii: [''],
-      gender: [''],
+      gender: [false],
       firstname_country_rank: [''],
       firstname_country_frequency: [''],
       lastname: [''],

@@ -5,7 +5,7 @@ export class User {
     initials: string | undefined;
     firstname: string | undefined;
     firstname_ascii!: string;
-    gender!: string;
+    gender!: boolean;
     firstname_country_rank!: string;
     firstname_country_frequency!: string;
     lastname!: string;

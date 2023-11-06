@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { enviroment } from 'src/enviroments/env';
+import { User } from '../model/user.model';
 
 @Injectable({
   providedIn: 'root'
@@ -24,7 +25,7 @@ export class GetCustomerDataService {
     const url = `${this.apiUrl}/${id}`;
     return this.http.delete(url);
   }
-  saveRecord(customerData: any): Observable<any> {
+  saveRecord(customerData: User): Observable<any> {
     const url = `${this.apiUrl}`; // Remove the trailing `/` in the URL
     return this.http.post(url, customerData); // Provide the URL and customerData as arguments
  }
